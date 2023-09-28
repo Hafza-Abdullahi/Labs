@@ -1,7 +1,6 @@
-
-// Student Name 	: Oisin Cawley
-// Student Id Number: 
-// Date 			: Nov-2015
+// Student Name 	: Hafza Abdullahi
+// Student Id Number: C00286249
+// Date 			: Sept 20223
 // Purpose 			: My first class implementation
 
 public class Lab1q1

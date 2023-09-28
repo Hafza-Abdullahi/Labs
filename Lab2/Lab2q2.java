@@ -1,6 +1,6 @@
-// Student Name 	: Oisin Cawley
-// Student Id Number: 
-// Date 			: Nov-2015
+// Student Name 	: Hafza Abdullahi
+// Student Id Number: C00286249
+// Date 			: Sept 20223
 // Purpose 			: My first class implementation
 
 public class Lab2q2 {
@@ -8,17 +8,18 @@ public class Lab2q2 {
 
     HotelRoom roomA = new HotelRoom();
 
-    roomA.setRoomNumber(200);
-    roomA.setRoomType("single");
+    roomA.setRate(100.0);
+    roomA.setVacant(1);
 
     HotelRoom roomB = new HotelRoom();
     
-    roomB.setRoomNumber(201);
-    roomB.setRoomType("Double");
-
-    System.out.println("A: room number is " + roomA.getRoomNumber() + " and it a " + roomA.getRoomType() + " room");
+    roomB.setRate(80.0);
+    roomB.setVacant(0);    
+    
+    System.out.println("A: room number is " + roomA.getVacant() + " meaning its occupied and the rate is " + roomA.getRate());
     
 
-    System.out.println("B: room number is " + roomB.getRoomNumber() + " and it a " + roomB.getRoomType() + " room");
+    System.out.println("A: room number is " + roomB.getVacant() + " meaning its vacant and the rate is " + roomB.getRate());
+
     }
 }

@@ -1,3 +1,4 @@
+import javax.sound.midi.Track;
 
 public class HotelRoom {
 
@@ -52,12 +53,24 @@ public class HotelRoom {
         this.rate = rate;
     }
 
+    //second constructor
+    public HotelRoom( Integer RoomNumber, String RoomType, Integer vacant, Double rate) {
+        
+        this.RoomNumber = RoomNumber;
+        this.RoomType = RoomType;
+        this.vacant = vacant;
+        this.rate = rate;
+
+        }
     
+    //tostring to avoid getting hash values
+    public String toString() {
+        
+        return RoomNumber + " " + RoomType + " " + vacant + " " + rate;
+    }
 
-
-
-
-
-
-
-}   
+    //0 = vacant, 1 = occupied
+    public boolean isOccupied() {
+        return true;
+    }
+}
