@@ -9,12 +9,12 @@ public class Lab2q2 {
     HotelRoom roomA = new HotelRoom();
 
     roomA.setRate(100.0);
-    roomA.setVacant(1);
+    roomA.setVacant(true);
 
     HotelRoom roomB = new HotelRoom();
     
     roomB.setRate(80.0);
-    roomB.setVacant(0);    
+    roomB.setVacant(false);    
     
     System.out.println("A: room number is " + roomA.getVacant() + " meaning its occupied and the rate is " + roomA.getRate());
     

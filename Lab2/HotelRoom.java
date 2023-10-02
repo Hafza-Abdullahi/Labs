@@ -4,7 +4,7 @@ public class HotelRoom {
 
     private Integer RoomNumber;
     private String RoomType;
-    private Integer vacant;
+    private boolean occupied;
     private Double rate;
 
     //necessary constructor no args
@@ -22,8 +22,8 @@ public class HotelRoom {
         return RoomType;
     }
 
-    public Integer getVacant() {
-        return vacant;
+    public boolean getVacant() {
+        return occupied;
     }
 
     public Double getRate() {
@@ -43,9 +43,9 @@ public class HotelRoom {
         this.RoomNumber = RoomNumber;
     }
 
-    public void setVacant(Integer vacant) {
+    public void setVacant(boolean occupied) {
 
-        this.vacant = vacant;
+        this.occupied = occupied;
     }
 
     public void setRate(Double rate) {
@@ -54,11 +54,11 @@ public class HotelRoom {
     }
 
     //second constructor
-    public HotelRoom( Integer RoomNumber, String RoomType, Integer vacant, Double rate) {
+    public HotelRoom( Integer RoomNumber, String RoomType, boolean occupied, Double rate) {
         
         this.RoomNumber = RoomNumber;
         this.RoomType = RoomType;
-        this.vacant = vacant;
+        this.occupied = occupied;
         this.rate = rate;
 
         }
@@ -66,11 +66,38 @@ public class HotelRoom {
     //tostring to avoid getting hash values
     public String toString() {
         
-        return RoomNumber + " " + RoomType + " " + vacant + " " + rate;
+        return RoomNumber + " " + RoomType + " " + occupied + " " + rate;
     }
 
-    //0 = vacant, 1 = occupied
+    //false = empty, true = occupied
     public boolean isOccupied() {
-        return true;
+
+        return occupied;
+
     }
+
+
+    String noDoubleBooking = " ";
+    public String setOccupied() {
+
+        //true if statement is first bcs if its false we want to change it to true
+        if ( occupied == true) {
+            
+            noDoubleBooking = " No Double Booking";
+        }
+
+        //if its empty, change to occupied and print status
+        if( occupied == false) {
+
+            occupied = true;
+            noDoubleBooking = " Room is not booked, booking now...";
+
+            
+        }
+
+        //return roomnumber and status, wether it was booked already or its now booked
+        return RoomNumber + ": " + noDoubleBooking;
+        
+    }
+
 }
