@@ -60,32 +60,36 @@ public class Rectangle {
     //print rectangle
     public String printRectangle() {
 
+        //topline loop
         for(int i = 0; i < width; i++) {
 
             System.out.print("*");
 
         }
+
+        //gapline
+        System.out.println();
 
         for(int i = 0; i < length; i++) {
+            //start of side
+            System.out.print("*"); 
 
-            System.out.println("*");
-            for(int x = 0; x < width; x++) {
-
+            //emoty space inbetween sides as wide as width - first two dots
+            for(int x = 0; x < width -2; x++) {
                 System.out.print(" ");
             }
-            
+            //closing side
             System.out.print("*");
+            System.out.println();
 
         }
 
         for(int i = 0; i < width; i++) {
-
             System.out.print("*");
-
         }
 
-
-        return " ";
+        System.out.println();
+        return "";
     }
 
 }
