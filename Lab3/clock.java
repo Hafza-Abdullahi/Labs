@@ -12,8 +12,9 @@ public class clock {
         msElapsed = System.currentTimeMillis();
         OneSecond = System.currentTimeMillis() + 1000;
 
-        System.out.println(msElapsed + " AND " + OneSecond);
         
+
         }
+        
 
 }

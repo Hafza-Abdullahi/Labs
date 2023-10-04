@@ -6,6 +6,7 @@ public class Time
 private int hour;     // 0 - 23
 private int minute;   // 0 - 59
 private int second;   // 0 - 59
+public int getSecond;
 
 // Time constructor initializes each instance variable
 // to zero. Ensures that Time object starts in a 
