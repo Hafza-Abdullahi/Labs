@@ -1,3 +1,7 @@
+// Student Name 	: Hafza Abdullahi
+// Student Id Number: C00286249
+// Date 			: Sept 20223
+// Purpose 			: rectangle
 package Lab2b;
 
 public class Lab2bQ2 {
