@@ -1,6 +1,6 @@
 // Student Name 	: Hafza Abdullahi
 // Student Id Number: C00286249
-// Date 			: Sept 20223
+// Date 			: Sept 2023
 // Purpose 			: Savings account
 package Lab3;
 
@@ -22,6 +22,8 @@ public class Accounts {
     
     System.out.println("Next month for saver " + saver1.getNumber() + " : " + saver1.calculateMonthlyInterest());
     System.out.println("Next month for saver " + saver2.getNumber() + " : " + saver2.calculateMonthlyInterest());
+
+    
     
     
     

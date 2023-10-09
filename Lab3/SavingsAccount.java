@@ -43,4 +43,9 @@ public class SavingsAccount {
     public static double modifyInterest(double newInterest) {
         return annualInterestRate = newInterest;
     }
+
+    public String toString() {
+
+       return "accNumber: " + number;
+    }
 }

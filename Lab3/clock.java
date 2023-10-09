@@ -1,3 +1,7 @@
+// Student Name 	: Hafza Abdullahi
+// Student Id Number: C00286249
+// Date 			: Sept 2023
+// Purpose 			: Savings account
 package Lab3;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
