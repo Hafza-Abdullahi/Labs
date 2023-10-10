@@ -1,18 +1,15 @@
 package Lab3;
-
 public class SavingsAccount {
     private static int number = 0;                      //static so it doesnt reset, it belongs to the class
     private int unique;
     private static double annualInterestRate = 0.04;
     private double savingsBalance;
 
-    
     //constructor
     //anytime an account is made, number goes up by 1, giving accounts different unique numberes
     public SavingsAccount() {
         number++;
         unique = number;
-        
     }
 
     //setters
@@ -23,7 +20,6 @@ public class SavingsAccount {
     //getters
     public int getNumber() {
         return unique;
-
     }
 
     public double getInterestRate() {
@@ -47,7 +43,6 @@ public class SavingsAccount {
 
     //displaying account info
     public String toString() {
-
-       return "accNumber: " + unique + " Balance: " + savingsBalance;
+       return "Account Number: " + unique + "\u0009Balance: " + savingsBalance;
     }
 }
