@@ -8,6 +8,7 @@ public class SavingsAccount {
 
     
     //constructor
+    //anytime an account is made, number goes up by 1, giving accounts different unique numberes
     public SavingsAccount() {
         number++;
         unique = number;
@@ -44,8 +45,9 @@ public class SavingsAccount {
         return annualInterestRate = newInterest;
     }
 
+    //displaying account info
     public String toString() {
 
-       return "accNumber: " + number;
+       return "accNumber: " + unique + " Balance: " + savingsBalance;
     }
 }
