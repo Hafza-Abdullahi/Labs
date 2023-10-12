@@ -3,15 +3,21 @@ public class myHrDriver {
 
         Employees bob = new Employees();
         Employees mary = new Employees();
+        Offices science = new Offices();
+        MyHr test = new MyHr();
+
         bob.address("a","b","c");
+        bob.setEmployeeType("sTaff");
+        
+        mary.setEmployeeType("manaGeR");
+        test.listOffices();
+        science.getRoomNumber();
+        
+        
 
-        System.out.println(bob.getEmployeeAddress());
-        System.out.println(bob.getEmployeeID());
-        System.out.println(mary.getEmployeeID());
-        bob.setEmployeeType("manAGER");
-        System.out.println(bob.getEmployeeType());
 
-        System.out.println(bob.getManagerInfo());
 
     }
+
+    
 }
