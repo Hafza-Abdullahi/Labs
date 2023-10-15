@@ -73,7 +73,7 @@ public class Employees {
     //Displaying info about each employee
     public String toString() {
 
-        return "\nEmployee Info\n\nNumber: " + employeeID + "\nAddress: " + getEmployeeAddress() + "\nEmployee Type: " + getEmployeeType() + "\nCar: " + carInfo;
+        return "Employee Info\nNumber: " + employeeID + "\nAddress: " + getEmployeeAddress() + "\nEmployee Type: " + getEmployeeType() + "\nCar: " + carInfo+ "\n\n";
     }
 }
     

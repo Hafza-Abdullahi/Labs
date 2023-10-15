@@ -1,30 +1,25 @@
+
 public class Offices {
-    private static int officeCounter = 99;
-    private int officeNumer;
-    private int room1,room2,room3;
+    private static int counter = 99;
+    private int roomNumber;
+    private int room1,room2,room3 = 0;
 
-    //initial constrictor
+    //initial constrictor       
+    //dont inittalise room numbers here
     public Offices() {
-        officeCounter++;
-        officeNumer = officeCounter;
-        room1 = officeNumer;
-        officeCounter++;
-        officeNumer = officeCounter;
-        room2 = officeNumer;
-        officeCounter++;
-        officeNumer = officeCounter;
-        room3 = officeNumer;
-
+        counter++;  //100
+        roomNumber = counter;   // roomnumber = 100
+        room1 = roomNumber;     // room1 = 100
+        counter++;              //101
+        roomNumber = counter;
+        room2 = roomNumber;
+        counter++;
+        roomNumber = counter;
+        room3 = roomNumber;
     }
 
-    public String getRoomNumber() {
-        return room1 + " " + room2+ " " +room3;
-    }
 
     public String toString() {
-        return "Office Rooms: " + room1 + " " + room2 +" " + room3;
+        return "OfficeRooms: " + room1 + " " + room2 + " " + room3;
     }
-
-    
-
 }
