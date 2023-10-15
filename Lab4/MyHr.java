@@ -2,13 +2,16 @@
 
 public class MyHr {
 
+    
     private Offices office1;
     private Offices office2;
     private Offices office3;
     private static int empCounter = -1;
     private Employees newEmp;
-    private Offices allOffices[] = new Offices[3];
-    private Employees allEmployees[] = new Employees[5];
+    private static Offices allOffices[] = new Offices[3];
+    private static Employees allEmployees[] = new Employees[5];
+    private static Employees[] personnelList = new Employees[2];
+    private static int personnelCount = 0;
 
     //constructors
     public MyHr() {
@@ -47,6 +50,18 @@ public class MyHr {
 
     }
 
+    //method to assign employee to an office
+    public void assignEmployee(Employees emp) {
+
+        if(personnelCount >2) {
+            System.out.println("Two Employees already assigned to this office");
+        }
+        else if(personnelCount <= 2) {
+            personnelList[personnelCount] = emp;
+            personnelCount++;
+        }
+        
+    }
 
 
 }

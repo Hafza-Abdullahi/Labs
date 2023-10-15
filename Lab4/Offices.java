@@ -2,10 +2,12 @@
 public class Offices {
     private static int counter = 99;
     private int roomNumber;
-    private int room1,room2,room3 = 0;
+    private int room1,room2,room3,room4 = 0;
+    
+    
 
     //initial constrictor       
-    //dont inittalise room numbers here
+    //rooms here dont match the public toString for some reason
     public Offices() {
         counter++;  //100
         roomNumber = counter;   // roomnumber = 100
@@ -17,7 +19,6 @@ public class Offices {
         roomNumber = counter;
         room3 = roomNumber;
     }
-
 
     public String toString() {
         return "OfficeRooms: " + room1 + " " + room2 + " " + room3;

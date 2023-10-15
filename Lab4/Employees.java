@@ -1,3 +1,4 @@
+import java.lang.foreign.Addressable;
 
 public class Employees {
 
@@ -8,6 +9,7 @@ public class Employees {
     private String type;
     private String employeeType;
     private String carInfo;
+    
 
     //constructor, gives each emp unique number;
     public Employees() {
@@ -18,7 +20,22 @@ public class Employees {
         
     }
 
+    //employee has an adress (aggregation)
+    class Address{
+        String street,city,town;
+        public Address(String street, String city, String town) {
+            this.street = street;
+            this.city = city;
+            this.town = town;
+        }
+    }
+
     //getters and setters
+    public void setEmployeeAddress(String street, String city, String town) {
+        this.street = street;
+        this.city = city;
+        this.town = town;
+    }
     public int getEmployeeID() {
         return employeeID;
 
@@ -27,14 +44,6 @@ public class Employees {
         return street + ", " + city + ", " + town;
     }
 
-    //employee has an adress
-    public String address(String street, String city, String town) {
-        this.street = street;
-        this.city = city;
-        this.town = town;
-
-        return street + ", " + city + ", " + town;
-    }
 
     //employee is a staff/member
     public String setEmployeeType(String type) {
